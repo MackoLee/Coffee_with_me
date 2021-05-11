@@ -13,3 +13,6 @@ class Stores(models.Model):
     post_num = models.CharField(max_length=10)
     Latitude = models.FloatField()
     longitude = models.FloatField()
+
+class A(models.Model):
+    name=models.CharField(max_length=50)

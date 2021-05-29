@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SeungMin1Fragment">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            tools:context=".MainActivity"
+            android:orientation="vertical">
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/my_intro_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+            <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dotsColor="#F1F1F1"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="12dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                app:selectedDotColor="#FFC107"
+                app:progressMode="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="✾ 오늘의 커피"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TableLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TableRow>
+                <TextView android:text="#야외석 있는" android:textSize="15dp" android:padding="10dp" android:textStyle="bold" android:textColor="@color/colorBlue"/>
+                <TextView android:text="#분위기 좋은" android:textSize="15dp" android:padding="10dp" android:textStyle="bold" android:textColor="@color/colorBlue"/>
+                <TextView android:text="#디저트가 맛있는" android:textSize="15dp" android:padding="10dp" android:textStyle="bold" android:textColor="@color/colorBlue"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="#커피가 맛있는" android:textSize="15dp" android:padding="10dp" android:textStyle="bold" android:textColor="@color/colorBlue"/>
+                <TextView android:text="#작업하기 좋은" android:textSize="15dp" android:padding="10dp" android:textStyle="bold" android:textColor="@color/colorBlue"/>
+                <TextView android:text="#저렴한" android:textSize="15dp" android:padding="10dp" android:textStyle="bold" android:textColor="@color/colorBlue"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="✾ 나만의 카페를 검색해보세요"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="#키워드로 입력해보세요"/>
+    </LinearLayout>
+</FrameLayout>
